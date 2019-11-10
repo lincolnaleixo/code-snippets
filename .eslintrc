@@ -1,0 +1,38 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "semi": [
+      "error",
+      "always"
+    ],
+    "no-multiple-empty-lines": [
+      2,
+      {
+        "max": 1,
+        "maxEOF": 1
+      }
+    ],
+    "padding-line-between-statements": [
+      2,
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "return"
+      }
+    ],
+    "no-await-in-loop": 0,
+    "no-constant-condition": 0,
+    "no-continue": 0,
+    "no-dupe-keys": 2,
+    "padded-blocks": [
+      "error",
+      "always"
+    ]
+  },
+  "extends": [
+    "airbnb"
+  ],
+  "plugins": [
+    "html"
+  ]
+}
