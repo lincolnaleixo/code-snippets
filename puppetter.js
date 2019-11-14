@@ -66,7 +66,10 @@ const url = 'https://duckduckgo.com/?q=houses&ia=web';
 
 		page.on('request', (request) => {
 
-			if (request.resourceType() === 'image' || request.resourceType() === 'font') {
+			if (
+				request.resourceType() === 'image'
+        || request.resourceType() === 'font'
+			) {
 
 				request.abort();
 
@@ -103,7 +106,10 @@ const url = 'https://duckduckgo.com/?q=houses&ia=web';
 
 	}
 
-	await page._client.send('Page.setDownloadBehavior', { behavior: 'allow', downloadPath });
+	await page._client.send('Page.setDownloadBehavior', {
+		behavior: 'allow',
+		downloadPath,
+	});
 
 	const min = 0;
 	const max = userAgents.length;
@@ -135,15 +141,17 @@ const url = 'https://duckduckgo.com/?q=houses&ia=web';
 	}
 
 	// Navigating to page
-	await page.goto(url, { waitUntil: ['networkidle0', 'load', 'domcontentloaded'] });
+	await page.goto(url, {
+		waitUntil: ['networkidle0', 'load', 'domcontentloaded'],
+	});
 
 	const pageFunction = "return Array.from(document.querySelectorAll('.result__a')).map(item=>item.innerText)";
 
 	// async use inside strings is necessary to fix errors if app is packaged with pkg.
 	// if pkg not necessary, just use normal evaluate
 	const evaluateResult = await page.evaluate(`(async() => {
-    ${pageFunction}
-  })()`);
+    	${pageFunction}
+  	})()`);
 
 	console.log(evaluateResult);
 
