@@ -1,0 +1,5 @@
+{
+  // * Appearance config
+  "python.envFile": "${workspaceRoot}/.env",
+  "python.pythonPath": "/Users/robot/.local/share/virtualenvs/gists-2jxRO0Rj/bin/python",
+}
