@@ -4,3 +4,4 @@ package-lock.json
 browserCookies
 logs
 Pipfile.lock
+.gitignore
