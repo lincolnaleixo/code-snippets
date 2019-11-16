@@ -1,7 +1,0 @@
-node_modules
-.history
-package-lock.json
-browserCookies
-logs
-Pipfile.lock
-.gitignore
