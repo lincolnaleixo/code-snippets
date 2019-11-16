@@ -38,4 +38,4 @@ print(result)
 # you can also get the elements using beautifulSoup
 # page_source = chrome.page_source
 # soup = BeautifulSoup(page_source, "html.parser")
-# element = soup.select('.selector or #id or tag')
+# element = soup.select('.class, #id or tag')
