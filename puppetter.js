@@ -141,19 +141,30 @@ const url = 'https://duckduckgo.com/?q=houses&ia=web';
 	}
 
 	// Navigating to page
-	await page.goto(url, {
+	const response = await page.goto(url, {
 		waitUntil: ['networkidle0', 'load', 'domcontentloaded'],
 	});
 
-	const pageFunction = "return Array.from(document.querySelectorAll('.result__a')).map(item=>item.innerText)";
+	const headers = response.headers();
 
-	// async use inside strings is necessary to fix errors if app is packaged with pkg.
-	// if pkg not necessary, just use normal evaluate
-	const evaluateResult = await page.evaluate(`(async() => {
+	// if page exists and no block was found
+	if (headers.status === '200') {
+
+		const pageFunction = "return Array.from(document.querySelectorAll('.result__a')).map(item=>item.innerText)";
+
+		// async use inside strings is necessary to fix errors if app is packaged with pkg.
+		// if pkg not necessary, just use normal evaluate
+		const evaluateResult = await page.evaluate(`(async() => {
     	${pageFunction}
   	})()`);
 
-	console.log(evaluateResult);
+		console.log(evaluateResult);
+
+	} else {
+
+		console.log(`Error on getting the page contents. Response status: ${headers.status}`);
+
+	}
 
 	// Saving cookies
 	const cookiesObject = await page.cookies();
