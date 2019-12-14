@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1">
+
+    
+    <script>
+      if (!location.href.match(/^(about:|file:)/)) {
+        var bplCookie = document.cookie.match(/(^|;\s*)uu\.app\.bpl=([^;]+)/);
+        var bplSegmentCount = (bplCookie ? Number(bplCookie[2]) : null);
+        if (typeof bplSegmentCount !== "number" || isNaN(bplSegmentCount) || bplSegmentCount < 0) bplSegmentCount = 2;
+        var appBaseUrlPath = (location.pathname.split(/\//).slice(0,1+bplSegmentCount).join("/")+"/").replace(/\/+/g,"/").replace(/"/g,"");
+        var appAssetsRelativeUrlPath = "public/1.10.0/";
+        document.write('<base href="' + appBaseUrlPath + appAssetsRelativeUrlPath + '" data-uu-app-base="' + appBaseUrlPath + '" data-uu-app-assets-base="' + appAssetsRelativeUrlPath + '">');
+      }
+    </script>
+
+    <link type="text/css" rel="stylesheet" href="https://cdn.plus4u.net/libs/clearsans/1.0.0/fonts/clear-sans.min.css">
+    <script src="https://cdn.plus4u.net/libs/systemjs/0.19.47/system.js"></script>
+    <script>document.write("<script src=\"uu5-environment.js\"><"+"/script>");</script>
+
+    <title>Unicorn</title>
+    <meta name="description" content="Unicorn je renomovaná evropská společnost poskytující ty největší informační systémy a řešení z oblasti informačních technologií." />
+    
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PGLFDHX');</script>
+<!-- End Google Tag Manager -->
+
+  <meta name="google-site-verification" content="XFD3fMW4ha56A4ob0lBGJADIwKaGshWoDaDhtH9aSjM" />
+  <meta name="format-detection" content="telephone=no"/>
+
+  <!-- Rich link --> 
+  <meta property="og:title" content="Unicorn"/> 
+  <meta property="og:site_name" content="Unicorn" />
+  <meta property="og:description" content="Unicorn je renomovaná evropská společnost poskytující ty největší informační systémy a řešení z oblasti informačních technologií."/> 
+  <meta property="og:url" content="unicorn.com"/>
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/jpg" />
+  <meta property="og:image" content="https://uuos9.plus4u.net/uu-webkit-maing02/d2a80094d8d24287befb333201f98edb/getBinaryData?code=prod1_small_ogimage1200x6307"/>
+  
+  <!-- Favicon -->
+  <link rel="mask-icon" href="assets/meta/safari-pinned-tab.svg" color="#002882"/>
+
+  <meta name="msapplication-TileColor" content="#ffffff"/>
+  <meta name="msapplication-TileImage" content="https://uuos9.plus4u.net/uu-webkit-maing02/d2a80094d8d24287befb333201f98edb/getBinaryData?code=prod1_small_mstile144x14411"/>
+  <meta name="msapplication-config" content="https://uuos9.plus4u.net/uu-webkit-maing02/d2a80094d8d24287befb333201f98edb/getBinaryData?code=prod1_small_browserconfig13"/>
+  
+  <link rel="apple-touch-icon-precomposed" sizes="512x512" href="https://uuos9.plus4u.net/uu-webkit-maing02/d2a80094d8d24287befb333201f98edb/getBinaryData?code=prod1_small_appletouchicon512x51211"/>
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://uuos9.plus4u.net/uu-webkit-maing02/d2a80094d8d24287befb333201f98edb/getBinaryData?code=prod1_small_appletouchicon180x18012"/>
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://uuos9.plus4u.net/uu-webkit-maing02/d2a80094d8d24287befb333201f98edb/getBinaryData?code=prod1_small_appletouchicon152x15212"/>
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://uuos9.plus4u.net/uu-webkit-maing02/d2a80094d8d24287befb333201f98edb/getBinaryData?code=prod1_small_appletouchicon144x14412"/>
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://uuos9.plus4u.net/uu-webkit-maing02/d2a80094d8d24287befb333201f98edb/getBinaryData?code=prod1_small_appletouchicon120x12012"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://uuos9.plus4u.net/uu-webkit-maing02/d2a80094d8d24287befb333201f98edb/getBinaryData?code=prod1_small_appletouchicon114x11412"/>
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://uuos9.plus4u.net/uu-webkit-maing02/d2a80094d8d24287befb333201f98edb/getBinaryData?code=prod1_small_appletouchicon76x7612"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://uuos9.plus4u.net/uu-webkit-maing02/d2a80094d8d24287befb333201f98edb/getBinaryData?code=prod1_small_appletouchicon72x7212"/>
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://uuos9.plus4u.net/uu-webkit-maing02/d2a80094d8d24287befb333201f98edb/getBinaryData?code=prod1_small_appletouchicon60x6011"/>
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://uuos9.plus4u.net/uu-webkit-maing02/d2a80094d8d24287befb333201f98edb/getBinaryData?code=prod1_small_appletouchicon57x5712"/>
+  <link rel="apple-touch-icon-precomposed" href="https://uuos9.plus4u.net/uu-webkit-maing02/d2a80094d8d24287befb333201f98edb/getBinaryData?code=prod1_small_appletouchicon11"/>
+  
+  <link rel="icon" type="image/png" href="https://uuos9.plus4u.net/uu-webkit-maing02/d2a80094d8d24287befb333201f98edb/getBinaryData?code=prod1_small_favicon16x1611" sizes="16x16"/>
+  <link rel="icon" type="image/png" href="https://uuos9.plus4u.net/uu-webkit-maing02/d2a80094d8d24287befb333201f98edb/getBinaryData?code=prod1_small_favicon32x3211" sizes="32x32"/>  
+  <link rel="icon" type="image/png" href="https://uuos9.plus4u.net/uu-webkit-maing02/d2a80094d8d24287befb333201f98edb/getBinaryData?code=prod1_small_favicon96x9611" sizes="96x96"/> 
+  <link rel="icon" type="image/png" href="https://uuos9.plus4u.net/uu-webkit-maing02/d2a80094d8d24287befb333201f98edb/getBinaryData?code=prod1_small_favicon194x19411" sizes="194x194"/>
+  <link rel="shortcut icon" href="https://uuos9.plus4u.net/uu-webkit-maing02/d2a80094d8d24287befb333201f98edb/getBinaryData?code=prod1_small_favicon14"/>
+  
+  <link rel="mask-icon" href="https://uuos9.plus4u.net/uu-webkit-maing02/d2a80094d8d24287befb333201f98edb/getBinaryData?code=prod1_small_safaripinnedtab" color="#ffff"/>
+  <link rel="manifest" href="https://uuos9.plus4u.net/uu-webkit-maing02/d2a80094d8d24287befb333201f98edb/getBinaryData?code=prod1_small_manifest10" />
+    <link rel="apple-touch-icon-precomposed" sizes="16x16" href="assets/meta/uuWebKit_icon_16.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="32x32" href="assets/meta/uuWebKit_icon_32.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="192x192" href="assets/meta/uuWebKit_icon_192.png"/>
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/meta/uuWebKit_icon_180.png"/>
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/meta/android-chrome-192x192.png"/>
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/meta/android-chrome-512x512.png"/>
+
+    <meta name="theme-color" content="#002882"/>
+
+    <script>
+      window.SystemJS && SystemJS.config({
+        "paths": {
+          "systemjs": "https://cdn.plus4u.net/libs/systemjs/0.19.47/system.js",
+          "create-react-class": "https://cdn.plus4u.net/libs/create-react-class/15.6.3/create-react-class.min.js",
+          "immutable": "https://cdn.plus4u.net/libs/immutable/3.8.2/immutable.min.js",
+          "prop-types": "https://cdn.plus4u.net/libs/prop-types/15.7.2/prop-types.min.js",
+          "react": "https://cdn.plus4u.net/libs/react/16.8.6/react.min.js",
+          "react-dnd": "https://cdn.plus4u.net/libs/react-dnd/7.0.2/ReactDnD.min.js",
+          "react-dnd-html5-backend": "https://cdn.plus4u.net/libs/react-dnd-html5-backend/7.0.2/ReactDnDHTML5Backend.min.js",
+          "react-dnd-touch-backend": "https://cdn.plus4u.net/libs/react-dnd-touch-backend/0.7.1/Touch.browserified.js",
+          "react-dom": "https://cdn.plus4u.net/libs/react-dom/16.8.6/react-dom.min.js",
+          "uu5_webkitg02": "https://cdn.plus4u.net/uu5-webkitg02/1.0.0/uu5_webkitg02.min.js",
+          "uu5codekitg01": "https://cdn.plus4u.net/uu-uu5codekitg01/1.0.0/uu5codekitg01.min.js",
+          "uu5codekitg01-markdown": "https://cdn.plus4u.net/uu-uu5codekitg01/1.0.0/uu5codekitg01-markdown.min.js",
+          "uu5g04": "https://cdn.plus4u.net/uu-uu5g04/1.0.0/uu5g04.min.js",
+          "uu5g04-block-layout": "https://cdn.plus4u.net/uu-uu5g04/1.0.0/uu5g04-block-layout.min.js",
+          "uu5g04-bricks": "https://cdn.plus4u.net/uu-uu5g04/1.0.0/uu5g04-bricks.min.js",
+          "uu5g04-bricks-editable": "https://cdn.plus4u.net/uu-uu5g04/1.0.0/uu5g04-bricks-editable.min.js",
+          "uu5g04-forms": "https://cdn.plus4u.net/uu-uu5g04/1.0.0/uu5g04-forms.min.js",
+          "uu5imagingg01": "https://cdn.plus4u.net/uu-uu5imagingg01/1.0.0/uu5imagingg01.min.js",
+          "uu5richtextg01": "https://cdn.plus4u.net/uu-uu5richtextg01/1.0.0/uu5richtextg01.min.js",
+          "uu5tilesg01": "https://cdn.plus4u.net/uu-uu5tilesg01/3.0.0/uu5tilesg01.min.js",
+          "uu5treeg01": "https://cdn.plus4u.net/uu-uu5treeg01/3.0.0/uu5treeg01.min.js",
+          "uu_appg01": "https://cdn.plus4u.net/uu-appg01/4.0.0/uu_appg01.min.js",
+          "uu_appg01_core": "https://cdn.plus4u.net/uu-appg01-core/4.0.0/uu_appg01_core.min.js",
+          "uu_appg01_oidc": "https://cdn.plus4u.net/uu-appg01-oidc/2.0.0/uu_appg01_oidc.min.js",
+          "uu_contentkitg01": "https://cdn.plus4u.net/uu-contentkitg01/1.0.0/uu_contentkitg01.min.js",
+          "uu_contentkitg01-bricks": "https://cdn.plus4u.net/uu-contentkitg01/1.0.0/uu_contentkitg01.min.js",
+          "uu_dynamiccomponentcontentg02": "https://cdn.plus4u.net/uu-dynamiccomponentcontentg02/2.0.0/uu_dynamiccomponentcontentg02.min.js",
+          "uu_flsg01": "https://cdn.plus4u.net/uu-flsg01/0.0.0/uu_flsg01.min.js",
+          "uu_oidcg01": "https://cdn.plus4u.net/uu-appg01-oidc/2.0.0/uu_appg01_oidc.min.js",
+          "uu_pg01": "https://cdn.plus4u.net/uu-pg01/2.0.0/uu_pg01.min.js",
+          "uu_pg01-bricks": "https://cdn.plus4u.net/uu-pg01/2.0.0/uu_pg01-bricks.min.js",
+          "uu_pg01-forms": "https://cdn.plus4u.net/uu-pg01/2.0.0/uu_pg01-forms.min.js",
+          "uu_plus4u5filesg01": "https://cdn.plus4u.net/uu-plus4u5filesg01/4.0.0/uu_plus4u5filesg01.min.js",
+          "uu_plus4u5g01": "https://cdn.plus4u.net/uu-plus4u5g01/3.0.0/uu_plus4u5g01.min.js",
+          "uu_plus4u5g01-app": "https://cdn.plus4u.net/uu-plus4u5g01/3.0.0/uu_plus4u5g01-app.min.js",
+          "uu_plus4u5g01-bricks": "https://cdn.plus4u.net/uu-plus4u5g01/3.0.0/uu_plus4u5g01-bricks.min.js",
+          "uu_plus4u5g01-uubmldraw": "https://cdn.plus4u.net/uu-plus4u5g01/3.0.0/uu_plus4u5g01-uubmldraw.min.js",
+          "uu_territoryg01": "https://cdn.plus4u.net/uu-territoryg01/1.0.0/uu_territoryg01.min.js",
+          "uu_territoryg01-accessroleifc": "https://cdn.plus4u.net/uu-territoryg01/1.0.0/uu_territoryg01-accessroleifc.min.js",
+          "uu_territoryg01-activity": "https://cdn.plus4u.net/uu-territoryg01/1.0.0/uu_territoryg01-activity.min.js",
+          "uu_territoryg01-ai": "https://cdn.plus4u.net/uu-territoryg01/1.0.0/uu_territoryg01-ai.min.js",
+          "uu_territoryg01-artifact": "https://cdn.plus4u.net/uu-territoryg01/1.0.0/uu_territoryg01-artifact.min.js",
+          "uu_territoryg01-artifactifc": "https://cdn.plus4u.net/uu-territoryg01/1.0.0/uu_territoryg01-artifactifc.min.js",
+          "uu_territoryg01-awsc": "https://cdn.plus4u.net/uu-territoryg01/1.0.0/uu_territoryg01-awsc.min.js",
+          "uu_territoryg01-bricks": "https://cdn.plus4u.net/uu-territoryg01/1.0.0/uu_territoryg01-bricks.min.js",
+          "uu_territoryg01-ee": "https://cdn.plus4u.net/uu-territoryg01/1.0.0/uu_territoryg01-ee.min.js",
+          "uu_territoryg01-folder": "https://cdn.plus4u.net/uu-territoryg01/1.0.0/uu_territoryg01-folder.min.js",
+          "uu_territoryg01-forms": "https://cdn.plus4u.net/uu-territoryg01/1.0.0/uu_territoryg01-forms.min.js",
+          "uu_territoryg01-groupifc": "https://cdn.plus4u.net/uu-territoryg01/1.0.0/uu_territoryg01-groupifc.min.js",
+          "uu_territoryg01-metamodel": "https://cdn.plus4u.net/uu-territoryg01/1.0.0/uu_territoryg01-metamodel.min.js",
+          "uu_territoryg01-obc": "https://cdn.plus4u.net/uu-territoryg01/1.0.0/uu_territoryg01-obc.min.js",
+          "uu_territoryg01-person": "https://cdn.plus4u.net/uu-territoryg01/1.0.0/uu_territoryg01-person.min.js",
+          "uu_territoryg01-rolegroupifc": "https://cdn.plus4u.net/uu-territoryg01/1.0.0/uu_territoryg01-rolegroupifc.min.js",
+          "uu_territoryg01-roleifc": "https://cdn.plus4u.net/uu-territoryg01/1.0.0/uu_territoryg01-roleifc.min.js",
+          "uu_territoryg01-territorygroup": "https://cdn.plus4u.net/uu-territoryg01/1.0.0/uu_territoryg01-territorygroup.min.js",
+          "uu_territoryg01-thing": "https://cdn.plus4u.net/uu-territoryg01/1.0.0/uu_territoryg01-thing.min.js",
+          "uu_territoryg01-unit": "https://cdn.plus4u.net/uu-territoryg01/1.0.0/uu_territoryg01-unit.min.js",
+          "uu_territoryg01-unitgroup": "https://cdn.plus4u.net/uu-territoryg01/1.0.0/uu_territoryg01-unitgroup.min.js"
+        },
+        "meta": {
+          "https://cdn.plus4u.net/libs/*": {
+            "format": ""
+          },
+          "https://cdn.plus4u.net/*": {
+            "format": "amd"
+          }
+        }
+      });
+    </script>
+
+    <style>/*------------TOP MENU-------------------*/
+
+.uu-webkit-top-menu-login-button{
+    position: absolute !important;
+    right: 0;
+    margin-right: 464px;
+    background: transparent !important;
+    color: rgb(0, 40, 130) !important;
+    text-transform: uppercase;
+    z-index:10; 
+    top: 16px;
+    
+}
+
+.uu-webkit-top-menu-login-button:hover{
+  color: #2196f3 !important;
+  font-weight: 700;
+}
+
+.uu-webkit-uni-left-menu-original .plus4u5-app-menu-link{
+  color: rgb(0, 40, 130) !important;
+}
+
+.uu-webkit-left-menu-login-button{
+  margin-left: 40px;
+    background: transparent !important;
+    color: rgb(0, 40, 130) !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size:15px !important;
+  
+}
+
+.uu-webkit-left-menu-login-button:hover{
+  color: #2196f3 !important;
+  
+}
+
+.uu-webkit-uni-top-menu-color .uu5-bricks-button{
+  color: rgb(0, 40, 130) !important;
+}
+
+.uu-webkit-uni-top-menu-color .uu5-bricks-button:hover{
+  color: #2196f3 !important;
+}
+
+
+/*--------------------------------------*/
+
+
+/*--------------------CAROUSEL------------------------*/
+@media screen and (min-width:338px) and (max-width:768px){
+  .uu-webkit-uni-carousel .uu5-bricks-carousel{
+    height:545px !important;
+  }
+}
+
+@media screen and (max-width:344px){
+  .uu-webkit-uni-carousel .uu5-bricks-carousel{
+    height:620px !important;
+  }
+}
+
+@media screen and (min-width:481px) and (max-width:768px){
+  .uu-webkit-uni-carousel .uu5-bricks-carousel-left, .uu5-bricks-carousel-right{
+    top: calc(12% - -8px) !important;
+  }
+}
+
+@media screen and (max-width:480px){
+  .uu-webkit-uni-carousel .uu5-bricks-carousel-left, .uu5-bricks-carousel-right{
+    top: calc(11% - -7px) !important;
+  }
+}
+
+@media screen and (max-width:768px){
+  .uu-webkit-uni-carousel .uu5-bricks-carousel-controls .uu5-bricks-carousel-indicators {
+      bottom: 7px !important; 
+  }
+  
+  .uu-webkit-uni-carousel .uu5-webkit-background-image{
+    height: 220px !important;
+  }
+  
+  .uu-webkit-uni-carousel .uu-webkit-bnmd14{
+    height:100%;
+  }
+  
+  .uu-webkit-uni-carousel .uu5-bricks-carousel-item .uu-webkit-9up59w {
+    height:100%;
+  }
+
+  .uu-webkit-uni-carousel .uu5-bricks-carousel-item .uu-webkit-9hotka {
+    height:100%;
+  }
+}
+/*-------------------------------------------------*/
+
+/*----------INFO TILES----------*/
+
+@media screen and (min-width: 993px){
+  .uu-webkit-uni-container-tiles-helper .uu-webkit-uni-info-tiles-homepage.uu5-bricks-row.uu5-bricks-row-flex{
+    flex-wrap: unset;
+    justify-content: space-between;
+  }
+  .uu-webkit-uni-info-tiles-homepage{
+    flex-flow:row nowrap;
+    
+  }
+  
+  .uu-webkit-uni-info-tiles-homepage  .uu5-webkit-info-tile:first-child {
+    margin-left:0;
+  }
+  
+  .uu-webkit-uni-info-tiles-homepage  .uu5-webkit-info-tile:last-child {
+    margin-right:0;
+  }
+}
+
+@media screen and (min-width: 895px) and (max-width: 992px){
+  .uu-webkit-uni-info-tiles-homepage .uu5-webkit-info-tile:first-child{
+    width: 48.5%;
+    margin-left: 0;
+    margin-right: 12px;
+  }
+  
+  .uu-webkit-uni-info-tiles-homepage .uu5-webkit-info-tile:not(:first-child):not(:last-child){
+    width: 48.5%;
+    margin-right: 0;
+    margin-left: 12px;
+  }
+  
+  .uu-webkit-uni-info-tiles-homepage .uu5-webkit-info-tile:last-child{
+    width: 48.5%;
+  }
+}
+
+@media screen and (min-width: 371px) and (max-width: 894px) {
+  .uu-webkit-uni-info-tiles-homepage  .uu5-webkit-info-tile {
+      width: 798px;
+      padding: 32px;
+  }
+}
+@media screen and (max-width: 894px){
+  .uu-webkit-uni-info-tiles-homepage  .uu5-webkit-info-tile {
+      height: auto;
+      margin: 0 0px 16px;
+  }
+
+  .uu-webkit-uni-container-tiles-helper .uu-webkit-uni-info-tiles-homepage .uu5-webkit-info-tile-image {
+    height: 100px;
+    min-height: 100px;
+  }
+}
+
+/*------------------------------*/
+
+.uu-webkit-usy-image-border-radius .uu5-webkit-image-panel-image{
+  border-radius:5px;
+}
+
+.uu-webkit-uni-news-tiles-helper .uu-webkit-uni-news-tiles{
+  background-color:#dfe2e6;
+  padding-bottom:13px;
+}
+
+.uu-webkit-uni-news-tiles .uu5-webkit-news-tile-list-cell{
+    margin:0;
+}
+
+.uu-webkit-uni-news-tiles .uu5-webkit-news-tile-list-cell{
+    max-width:566px;
+    margin:0;
+  }
+
+  .uu-webkit-uni-news-tiles .uu5-webkit-news-tile-list-cell .uu5-webkit-news-tile{
+    max-width:558px;
+  }
+  
+@media screen and (max-width:769px){
+  .uu-webkit-uni-news-tiles .uu5-webkit-news-tile-list-cell {
+    max-width:unset;
+  }
+  
+  .uu-webkit-uni-news-tiles .uu5-webkit-news-tile-list-cell .uu5-webkit-news-tile{
+    max-width:unset;
+  }
+}
+
+@media screen and (min-width:769px){
+  .uu-webkit-uni-news-tiles .uu5-webkit-news-tile-list-cell:last-child{
+      margin-left: 27px;
+  }
+}
+
+.uu-webkit-usy-is-link .uu-webkit-usy-is-well{
+  color:#002882;
+}
+
+ .uu-webkit-usy-is-well:hover{
+  color:#4562A4;
+}
+
+@media screen and (min-width:993px) and (max-width:1081px){
+  .uu-webkit-usy-is-link .uu-webkit-usy-is-well.uu-webkit-usy-is-well-energy-and-utilities{
+    padding-bottom:0; 
+  }
+}
+
+/*HOMEPAGE TILES*/
+.homepage-panels {
+  max-width:1152px;
+  margin:auto;
+}
+
+.homepage-panels .uu-webkit-unicorn-tiles-columns{
+  padding-top:8px;
+  padding-bottom:8px;
+}
+
+
+.uu-webkit-unicorn-image-zoom{
+  transition: transform .5s ease;
+}
+
+.uu-webkit-unicorn-image-zoom:hover{
+  transform: scale(1.05);
+}
+
+.uu-webkit-unicorn-bg-zoom:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  box-shadow: transparent 0px 0px 0px 0px;
+  background: rgb(223, 226, 230);
+  transition: all 0.6s ease-in-out 0s;
+  border-radius: 8px;
+}
+.uu-webkit-unicorn-bg-zoom:hover:after{
+  transform: scale(1.04, 1.04);
+}
+.uu-webkit-unicorn-bg-zoom:hover:after{
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 22px 4px, rgba(0, 0, 0, 0.3) 0px 16px 12px -16px;
+  transform: scale(1.04, 1.04);
+}
+
+
+@media screen and (min-width:993px) and (max-width:1187px){
+
+  .uu-webkit-uni-tiles-selector-helper .uu-webkit-uni-tiles-word-break{
+    word-break: break-all;
+    line-height:1.14;
+  }
+}
+
+/*-----------------------------*/
+
+.uu-webkit-arrow-up::before{
+    border: 12px solid transparent;
+    border-bottom-color: rgb(223, 226, 230);
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    margin-top: -64px;
+}
+
+/*-----------CONTACTS-----------*/
+
+.uu-webkit-uni-contact-card{
+  display: flex;
+  height: 100%;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+/*------------------------------*/
+
+
+/*BOTTOM*/
+
+@media screen and (min-width:993px){
+  .uu-webkit-unicorn-bottom-row > .uu-webkit-unicorn-bottom-column-2{
+     padding-left: 65px;
+  }
+  
+  .uu-webkit-unicorn-bottom-row > .uu-webkit-unicorn-bottom-column-3{
+     padding-left: 32.5px;
+  }
+}</style>
+
+
+    <style>
+      .uu-webkit-initial-loading {
+        background-image: linear-gradient(6deg, #0058a3 31%, #003783 100%);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+      }
+
+      .uu-webkit-initial-loading-spinner {
+        display: block;
+        position: relative;
+        width: 216px;
+        height: 216px;
+        border-radius: 50%;
+        border: 8px solid transparent;
+        border-top-color: rgba(255, 255, 255, 0.24);
+        border-left-color: rgba(255, 255, 255, 0.24);
+
+        animation: spin-revert 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+      }
+
+      .uu-webkit-initial-loading-spinner:before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        border-radius: 50%;
+        border: 8px solid transparent;
+        border-top-color: rgba(255, 255, 255, 0.64);
+        border-left-color: rgba(255, 255, 255, 0.64);
+
+        animation: spin 1s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+      }
+
+      .uu-webkit-initial-loading-spinner:after {
+        content: "";
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        right: 50px;
+        bottom: 50px;
+        border-radius: 50%;
+        border: 8px solid transparent;
+        border-top-color: rgba(255, 255, 255, 0.89);
+        border-left-color: rgba(255, 255, 255, 0.89);
+
+        animation: spin 0.7s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+          transform: rotate(360deg); /* Firefox 16+, IE 10+, Opera */
+        }
+      }
+
+      @keyframes spin-revert {
+        0% {
+          transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera */
+        }
+        100% {
+          transform: rotate(-360deg); /* Firefox 16+, IE 10+, Opera */
+        }
+      }
+
+      .uu-webkit-initial-loading-content {
+        color: #fff;
+        font-size: 32px;
+        margin-top: 56px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="uuWebKit">
+      <div class="uu5-bricks-div uu5-bricks-loading uu5-common-padding-5 uu-webkit-initial-loading clear-sans">
+        <div class="uu5-bricks-div uu-webkit-initial-loading-spinner"></div>
+        <div class="uu5-bricks-div uu-webkit-initial-loading-content"></div>
+      </div>
+    </div>
+    <script>
+      SystemJS.import("./userGate.js").then(function (Index) {
+        Index.render("uuWebKit");
+      });
+    </script>
+  </body>
+</html>
